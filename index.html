@@ -5,274 +5,207 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PowerZone Fitness | Gym in Coimbatore</title>
 
-<meta name="description" content="PowerZone Fitness is a modern gym in Coimbatore offering weight loss and personal training programs.">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:#0B0F19;color:#fff;}
+html{scroll-behavior:smooth;}
 
-html{
-  scroll-behavior:smooth;
-}
+.container{max-width:1100px;margin:auto;padding:0 20px;}
 
-body{
-  background:#0B0F19;
-  color:#fff;
-}
-
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:0 20px;
-}
-
-/* NAVBAR */
+/* NAV */
 nav{
-  position:fixed;
-  width:100%;
-  background:#0B0F19;
-  border-bottom:1px solid #1f2937;
-  z-index:1000;
+position:fixed;
+top:0;
+width:100%;
+background:#0B0F19;
+border-bottom:1px solid #1f2937;
+z-index:1000;
 }
 
-.nav-wrapper{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:18px 20px;
+.nav-inner{
+max-width:1100px;
+margin:auto;
+padding:18px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
 
 .logo{
-  font-weight:800;
-  font-size:20px;
-  color:#FF3C38;
+font-weight:800;
+font-size:20px;
+color:#FF3C38;
 }
 
 .menu{
-  display:flex;
-  gap:25px;
+display:flex;
+gap:30px;
 }
 
 .menu a{
-  color:#aaa;
-  text-decoration:none;
-  font-weight:500;
+color:#aaa;
+text-decoration:none;
+font-weight:500;
 }
 
-.menu a:hover{
-  color:#FF3C38;
-}
+.menu a:hover{color:#FF3C38;}
 
 /* HERO */
 .hero{
-  height:100vh;
-  display:flex;
-  align-items:center;
-  background:
-  linear-gradient(to right,#000000d9,#000000d9),
-  url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') center/cover;
-  padding-top:80px;
+height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(to right,#000000d9,#000000d9),
+url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74') center/cover;
+padding-top:80px;
 }
 
-.hero-content{
-  max-width:600px;
-}
+.hero-content{max-width:600px;}
 
 .hero h1{
-  font-size:52px;
-  font-weight:800;
-  margin-bottom:20px;
+font-size:52px;
+font-weight:800;
+margin-bottom:20px;
 }
 
 .hero p{
-  color:#ccc;
-  margin-bottom:30px;
+color:#ccc;
+margin-bottom:30px;
 }
 
 .btn{
-  display:inline-block;
-  padding:14px 30px;
-  background:#FF3C38;
-  color:#fff;
-  text-decoration:none;
-  border-radius:6px;
-  font-weight:600;
-  margin-right:15px;
+display:inline-block;
+padding:14px 30px;
+background:#FF3C38;
+color:#fff;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+margin-right:15px;
 }
 
-.btn:hover{
-  opacity:0.85;
-}
-
-/* SECTIONS */
-section{
-  padding:90px 0;
-}
+section{padding:90px 0;}
 
 .section-title{
-  text-align:center;
-  font-size:32px;
-  margin-bottom:50px;
+text-align:center;
+font-size:32px;
+margin-bottom:50px;
 }
 
 .cards{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
 }
 
 .card{
-  background:#141A29;
-  padding:35px;
-  border-radius:10px;
-  text-align:center;
-  border:1px solid #1f2937;
-  transition:0.3s;
+background:#141A29;
+padding:35px;
+border-radius:10px;
+text-align:center;
+border:1px solid #1f2937;
 }
 
-.card:hover{
-  transform:translateY(-6px);
-  border-color:#FF3C38;
-}
-
-/* CTA */
 .cta{
-  background:#FF3C38;
-  text-align:center;
-  padding:70px 20px;
+background:#FF3C38;
+text-align:center;
+padding:70px 20px;
 }
 
-.cta h2{
-  font-size:32px;
-  margin-bottom:20px;
-}
+.cta .btn{background:#000;}
 
-.cta .btn{
-  background:#000;
-}
-
-/* FOOTER */
 footer{
-  background:#111;
-  text-align:center;
-  padding:40px 0;
-  color:#777;
+background:#111;
+text-align:center;
+padding:40px 0;
+color:#777;
 }
 
-/* MOBILE FIX */
+/* MOBILE */
 @media(max-width:768px){
 
-  .nav-wrapper{
-    flex-direction:column;
-    gap:10px;
-  }
+.hero h1{font-size:34px;}
+.section-title{font-size:24px;}
 
-  .menu{
-    flex-direction:column;
-    align-items:center;
-  }
+.menu{
+gap:15px;
+}
 
-  .hero h1{
-    font-size:34px;
-  }
-
-  .section-title{
-    font-size:24px;
-  }
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <nav>
-  <div class="nav-wrapper">
-    <div class="logo">PowerZone Fitness</div>
-    <div class="menu">
-      <a href="#services">Services</a>
-      <a href="#plans">Plans</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<div class="nav-inner">
+<div class="logo">PowerZone Fitness</div>
+<div class="menu">
+<a href="#services">Services</a>
+<a href="#plans">Plans</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <h1>Train Hard. Transform Fast.</h1>
-      <p>Premium gym in Coimbatore with certified trainers and modern equipment.</p>
-      <a href="https://wa.me/919999999999" class="btn">Join Now</a>
-      <a href="tel:+919999999999" class="btn">Call Now</a>
-    </div>
-  </div>
+<div class="container">
+<div class="hero-content">
+<h1>Train Hard. Transform Fast.</h1>
+<p>Premium gym in Coimbatore with certified trainers and modern equipment.</p>
+<a href="#" class="btn">Join Now</a>
+<a href="#" class="btn">Call Now</a>
+</div>
+</div>
 </section>
 
-<!-- SERVICES -->
 <section id="services">
-  <div class="container">
-    <h2 class="section-title">Our Services</h2>
-    <div class="cards">
-      <div class="card">Weight Loss Programs</div>
-      <div class="card">Muscle Gain Training</div>
-      <div class="card">Personal Training</div>
-      <div class="card">Strength & Cardio Zone</div>
-    </div>
-  </div>
+<div class="container">
+<h2 class="section-title">Our Services</h2>
+<div class="cards">
+<div class="card">Weight Loss Programs</div>
+<div class="card">Muscle Gain Training</div>
+<div class="card">Personal Training</div>
+<div class="card">Strength & Cardio Zone</div>
+</div>
+</div>
 </section>
 
-<!-- PLANS -->
 <section id="plans">
-  <div class="container">
-    <h2 class="section-title">Membership Plans</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Basic</h3>
-        <p>Gym Access</p>
-        <p style="font-size:22px;margin-top:10px;">₹1,200 / month</p>
-      </div>
-      <div class="card">
-        <h3>Premium</h3>
-        <p>Gym + Personal Trainer</p>
-        <p style="font-size:22px;margin-top:10px;">₹3,500 / month</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<h2 class="section-title">Membership Plans</h2>
+<div class="cards">
+<div class="card">
+<h3>Basic</h3>
+<p>₹1,200 / month</p>
+</div>
+<div class="card">
+<h3>Premium</h3>
+<p>₹3,500 / month</p>
+</div>
+</div>
+</div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact">
-  <div class="container" style="text-align:center">
-    <h2 class="section-title">Visit Us</h2>
-    <p>Coimbatore, Tamil Nadu</p>
-    <p>+91 99999 99999</p>
-    <br>
-    <iframe 
-    src="https://www.google.com/maps?q=Coimbatore&output=embed"
-    width="100%" height="300"
-    style="border:0;border-radius:10px;">
-    </iframe>
-    <br><br>
-    <a href="https://wa.me/919999999999" class="btn">Chat on WhatsApp</a>
-  </div>
+<div class="container" style="text-align:center">
+<h2 class="section-title">Contact Us</h2>
+<p>Coimbatore, Tamil Nadu</p>
+<p>+91 99999 99999</p>
+</div>
 </section>
 
-<!-- CTA -->
 <div class="cta">
-  <h2>Ready to Transform Your Body?</h2>
-  <a href="https://wa.me/919999999999" class="btn">Join Today</a>
+<h2>Ready to Transform Your Body?</h2>
+<br>
+<a href="#" class="btn">Join Today</a>
 </div>
 
-<!-- FOOTER -->
 <footer>
-  © 2026 PowerZone Fitness | All Rights Reserved
+© 2026 PowerZone Fitness | All Rights Reserved
 </footer>
 
 </body>
