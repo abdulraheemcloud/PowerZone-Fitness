@@ -3,23 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PowerZone Fitness | Transform in 90 Days</title>
+
+<title>PowerZone Fitness | Best Gym in Coimbatore</title>
+
+<meta name="description" content="PowerZone Fitness is a professional gym in Coimbatore offering weight loss, muscle gain and personal training programs. Join today.">
+<meta name="keywords" content="Gym in Coimbatore, Weight Loss Gym, Personal Trainer, Fitness Center">
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
 <style>
 :root{
 --primary:#EF4444;
---dark:#0F172A;
---gray:#64748B;
---light:#F8FAFC;
+--dark:#111827;
+--gray:#6B7280;
+--light:#F9FAFB;
 --border:#E5E7EB;
 }
 
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
 body{background:#fff;color:var(--dark);line-height:1.6}
-.container{max-width:1100px;margin:auto;padding:0 20px}
+.container{max-width:1150px;margin:auto;padding:0 20px}
 section{padding:90px 0}
-
-h1{font-size:48px;font-weight:800;margin-bottom:20px}
+h1{font-size:52px;font-weight:800;margin-bottom:20px}
 h2{font-size:32px;font-weight:700;margin-bottom:20px;text-align:center}
 p{color:var(--gray)}
 
@@ -32,16 +37,28 @@ top:0;
 z-index:1000;
 }
 .nav .container{display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800;font-size:20px;color:var(--primary)}
+.logo{font-weight:800;font-size:22px;color:var(--primary)}
 .nav a{text-decoration:none;margin-left:20px;color:var(--gray);font-weight:600}
 
 .hero{
-background:linear-gradient(to right,#111827,#1F2937);
+background:url('https://images.unsplash.com/photo-1599058917765-a780eda07a3e') center/cover no-repeat;
 color:#fff;
 text-align:center;
-padding:130px 20px;
+padding:160px 20px;
+position:relative;
 }
-.hero p{color:#D1D5DB;max-width:600px;margin:auto}
+.hero::after{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.6);
+}
+.hero .content{
+position:relative;
+z-index:1;
+}
+.hero p{color:#E5E7EB;max-width:600px;margin:auto}
+
 .btn{
 display:inline-block;
 padding:14px 30px;
@@ -49,14 +66,15 @@ border-radius:6px;
 font-weight:700;
 text-decoration:none;
 margin-top:20px;
+background:var(--primary);
+color:#fff;
 transition:0.3s;
 }
-.btn-primary{background:var(--primary);color:#fff}
-.btn-primary:hover{opacity:0.9}
+.btn:hover{opacity:0.9}
 
 .grid{
 display:grid;
-gap:25px;
+gap:30px;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 margin-top:40px;
 }
@@ -64,42 +82,42 @@ margin-top:40px;
 .card{
 background:#fff;
 padding:30px;
-border-radius:10px;
+border-radius:12px;
 border:1px solid var(--border);
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
 text-align:center;
 transition:0.3s;
 }
-.card:hover{transform:translateY(-6px)}
+.card:hover{transform:translateY(-8px)}
 
-.highlight{
-background:#F3F4F6;
+.transformation img{
+width:100%;
+border-radius:10px;
 }
 
 .price-box{
 text-align:center;
-max-width:350px;
-margin:40px auto 0;
 background:#fff;
-padding:35px;
+padding:40px;
 border-radius:12px;
 border:1px solid var(--border);
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.06);
 }
 
 footer{
 background:#111827;
 color:#9CA3AF;
 text-align:center;
-padding:40px 0;
+padding:50px 0;
 }
 
 @media(max-width:768px){
-h1{font-size:34px}
-h2{font-size:24px}
+h1{font-size:36px}
+h2{font-size:26px}
 }
 </style>
 </head>
+
 <body>
 
 <div class="nav">
@@ -107,17 +125,17 @@ h2{font-size:24px}
 <div class="logo">PowerZone Fitness</div>
 <div>
 <a href="#services">Services</a>
-<a href="#pricing">Plans</a>
+<a href="#plans">Plans</a>
 <a href="#contact">Contact</a>
 </div>
 </div>
 </div>
 
 <section class="hero">
-<div class="container">
+<div class="content">
 <h1>Transform Your Body in 90 Days</h1>
-<p>Professional gym in Coimbatore with certified trainers, modern equipment and personalized diet guidance.</p>
-<a href="https://wa.me/919999999999" class="btn btn-primary">Join Now</a>
+<p>Professional gym in Coimbatore with certified trainers and modern equipment.</p>
+<a href="https://wa.me/919999999999" class="btn">Join Now</a>
 </div>
 </section>
 
@@ -128,48 +146,63 @@ h2{font-size:24px}
 <div class="card">Weight Loss Programs</div>
 <div class="card">Muscle Gain Training</div>
 <div class="card">Personal Training</div>
-<div class="card">Cardio & Strength Zone</div>
+<div class="card">Strength & Cardio Zone</div>
 </div>
 </div>
 </section>
 
-<section class="highlight">
+<section class="transformation">
 <div class="container">
-<h2>Why Choose PowerZone?</h2>
+<h2>Transformation Stories</h2>
 <div class="grid">
-<div class="card">✔ Certified Trainers</div>
-<div class="card">✔ Modern Equipment</div>
-<div class="card">✔ Customized Diet Plans</div>
+<div><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61"></div>
+<div><img src="https://images.unsplash.com/photo-1594737625785-cf64d7c57e04"></div>
 </div>
 </div>
 </section>
 
-<section id="pricing">
+<section id="plans">
 <div class="container">
 <h2>Membership Plans</h2>
 <div class="grid">
 <div class="price-box">
 <h3>Basic</h3>
 <p>Gym Access</p>
-<p style="font-size:26px;font-weight:800;margin:15px 0">₹1,200 / month</p>
-<a href="#" class="btn btn-primary">Enroll</a>
+<p style="font-size:28px;font-weight:800;margin:15px 0">₹1,200 / month</p>
+<a href="#" class="btn">Enroll</a>
 </div>
 <div class="price-box">
 <h3>Premium</h3>
 <p>Gym + Personal Trainer</p>
-<p style="font-size:26px;font-weight:800;margin:15px 0">₹3,500 / month</p>
-<a href="#" class="btn btn-primary">Enroll</a>
+<p style="font-size:28px;font-weight:800;margin:15px 0">₹3,500 / month</p>
+<a href="#" class="btn">Enroll</a>
 </div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<h2>What Members Say</h2>
+<div class="grid">
+<div class="card">"Lost 8kg in 3 months. Amazing trainers!"</div>
+<div class="card">"Best gym experience in Coimbatore."</div>
 </div>
 </div>
 </section>
 
 <section id="contact">
 <div class="container" style="text-align:center">
-<h2>Contact Us</h2>
-<p>📍 Coimbatore</p>
+<h2>Visit Us</h2>
+<p>📍 Coimbatore, Tamil Nadu</p>
 <p>📞 +91 99999 99999</p>
-<a href="https://wa.me/919999999999" class="btn btn-primary">Chat on WhatsApp</a>
+<br>
+<iframe 
+src="https://www.google.com/maps?q=Coimbatore&output=embed"
+width="100%" height="300" style="border:0;border-radius:10px;">
+</iframe>
+<br><br>
+<a href="https://wa.me/919999999999" class="btn">Chat on WhatsApp</a>
 </div>
 </section>
 
